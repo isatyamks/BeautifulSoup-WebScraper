@@ -9,9 +9,10 @@ mobile_name =[]
 prices = []
 description =[]
 reviews =[]
+datasets=[]
 
 
-url_loop = "https://www.flipkart.com/search?q=mobiles&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off&page=1"
+url_loop = "https://www.flipkart.com/search?q=phone&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=off&as=off"
 
 r =requests.get(url_loop)
 
@@ -58,4 +59,4 @@ df =pd.DataFrame({"Mobiles Name": mobile_name,"Prices": prices,"Reviews": review
 
 print(df)
 
-df.to_csv("web-data\@flipkart.csv")
+df.to_csv("web-data/flipkart.csv")

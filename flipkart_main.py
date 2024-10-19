@@ -112,7 +112,7 @@ reviews =[]
 
 soup =BeautifulSoup (r.text,"lxml")
 
-names =sou
+
 
 
 
